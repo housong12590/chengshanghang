@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="积分详情"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="当前可用积分"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_14"/>
+
+    <TextView
+        android:id="@+id/tv_integral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textColor="@color/btn_nor"
+        android:textSize="@dimen/text_20"/>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/btn_nor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="积分明细"
+            android:textColor="@color/gray_66"
+            android:textSize="@dimen/text_14"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/content"
+        class="com.jmm.csg.pro.manager.fragment.IntegralDetailsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+
+</LinearLayout>

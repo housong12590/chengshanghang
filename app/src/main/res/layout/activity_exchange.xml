@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="退换货"/>
+
+    <TextView
+        android:id="@+id/tv_return"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/selector_btn_bg"
+        android:gravity="center"
+        android:text="申请退货"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16"/>
+
+    <TextView
+        android:id="@+id/tv_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_bg"
+        android:gravity="center"
+        android:text="申请换货"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16"/>
+
+
+</LinearLayout>

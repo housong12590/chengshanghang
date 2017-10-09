@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          style="@style/btn_style"
+          android:layout_marginRight="12dp"
+          android:background="@drawable/shape_btn_gray_bg"
+          android:text="查看物流"
+          android:textColor="@color/gray_96"/>

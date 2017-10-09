@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="交易详情"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/layout_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="支付成功"
+        android:textColor="@color/red"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/icon_pay"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="¥280.00"
+        android:textColor="@color/btn_nor"
+        android:textSize="32sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/layout_bg"
+        android:layout_height="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="商品名称"
+            android:textColor="@color/btn_nor"
+            android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:id="@+id/tv_pro_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="2017年本色银条"
+            android:textColor="@color/gray_66"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider_h"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="商品规格"
+            android:textColor="@color/btn_nor"
+            android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:id="@+id/tv_pro_specification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="100g"
+            android:textColor="@color/gray_66"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider_h"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="成交时间"
+            android:textColor="@color/btn_nor"
+            android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="2017-10-12 15:32"
+            android:textColor="@color/gray_66"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider_h"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="订单编号"
+            android:textColor="@color/btn_nor"
+            android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:id="@+id/tv_orderId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="123546123554"
+            android:textColor="@color/gray_66"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider_h"/>
+
+
+</LinearLayout>

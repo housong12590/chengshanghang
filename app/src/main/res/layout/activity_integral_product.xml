@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="积分兑换"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="当前可用积分"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_14"/>
+
+    <TextView
+        android:id="@+id/tv_integral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textColor="@color/btn_nor"
+        android:textSize="@dimen/text_18"/>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginTop="5dp"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        app:tabIndicatorColor="@color/btn_nor"
+        app:tabSelectedTextColor="@color/btn_nor"/>
+
+    <com.jmm.csg.widget.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+
+</LinearLayout>

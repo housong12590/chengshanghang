@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jmm.csg.pro.manager.activity.IntegralRuleActivity">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="积分兑换"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/shape_dashed_bg"
+        android:gravity="center"
+        android:text="积分规则"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_20"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/btn_nor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="积分余额=奖励积分-消耗积分"
+            android:textColor="@color/btn_nor"
+            android:textSize="@dimen/text_16"
+            android:textStyle="italic|bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="1.奖励积分,指客户经理推广贵金属产品获得平台给予的积分奖励。奖励的积分数，根据客户购买的金额计算。1元奖励1积分。"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_14"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_dashed_divider_bg"
+        android:layerType="software"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="2.消耗积分，指客户经理通过积分兑换充值业务或事物所扣除的积分。"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_14"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_dashed_divider_bg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="3.积分一经兑换，不予退还。"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_14"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_dashed_divider_bg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="4.积分不能用于提现。"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_14"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_dashed_divider_bg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="5.积分有效期:5年。"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_14"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_dashed_divider_bg"/>
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/selector_btn_bg"
+        android:gravity="center"
+        android:text="好的,我知道了"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16"
+        android:textStyle="bold"/>
+</LinearLayout>

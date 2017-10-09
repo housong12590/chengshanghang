@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/icon_gesture_bg"
+              android:orientation="vertical">
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_background="@android:color/transparent"
+        app:left_image="@drawable/icon_back"
+        app:title_text="设置手势密码"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_tip_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/shape_gesture_setup"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <ImageView
+                    android:id="@+id/gesture_pwd_iv0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shape_circle_nor"/>
+
+                <ImageView
+                    android:id="@+id/gesture_pwd_iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/shape_circle_nor"/>
+
+                <ImageView
+                    android:id="@+id/gesture_pwd_iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/shape_circle_nor"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@drawable/shape_gesture_setup"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <ImageView
+                    android:id="@+id/gesture_pwd_iv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shape_circle_nor"/>
+
+                <ImageView
+                    android:id="@+id/gesture_pwd_iv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/shape_circle_nor"/>
+
+                <ImageView
+                    android:id="@+id/gesture_pwd_iv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/shape_circle_nor"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@drawable/shape_gesture_setup"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <ImageView
+                    android:id="@+id/gesture_pwd_iv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shape_circle_nor"/>
+
+                <ImageView
+                    android:id="@+id/gesture_pwd_iv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/shape_circle_nor"/>
+
+                <ImageView
+                    android:id="@+id/gesture_pwd_iv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/shape_circle_nor"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="绘制解锁图案"
+            android:textColor="@color/gray_f1"
+            android:textSize="@dimen/text_14"/>
+
+        <com.jmm.csg.widget.GesturePwdView
+            android:id="@+id/gestureView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+</LinearLayout>

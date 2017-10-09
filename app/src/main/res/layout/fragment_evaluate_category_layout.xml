@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_group"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/all_evaluate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="right|center_vertical"
+            android:text="全部评价:0"
+            android:textColor="@color/evaluate_tab_color"
+            android:textSize="@dimen/text_12"/>
+
+        <Button
+            android:id="@+id/p_evaluate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="好评: 0"
+            android:textColor="@color/evaluate_tab_color"
+            android:textSize="@dimen/text_12"/>
+
+        <Button
+            android:id="@+id/b_evaluate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="left|center_vertical"
+            android:text="差评:0"
+            android:textColor="@color/evaluate_tab_color"
+            android:textSize="@dimen/text_12"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider_h"/>
+
+    <com.jmm.csg.widget.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"/>
+
+</LinearLayout>

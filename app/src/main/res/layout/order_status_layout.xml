@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:gravity="right|center_vertical"
+              android:layout_height="54dp">
+
+    <TextView
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_btn_gray_bg"
+        android:gravity="center"
+        android:text="删除订单"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_16"/>
+
+    <TextView
+        android:id="@+id/tv_evaluate"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/selector_btn_red_bg"
+        android:gravity="center"
+        android:text="评价"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16"/>
+
+
+</LinearLayout>

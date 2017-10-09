@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="退货详情" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical|bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="退货原因:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/tv_cause"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14"
+                    tools:text="质量问题" />
+
+            </LinearLayout>
+
+            <!--<View-->
+            <!--style="@style/divider_h"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginRight="12dp"/>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="问题描述:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/gray_f1" />
+            <!--<View-->
+            <!--style="@style/divider_h"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginRight="12dp"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="相关图片"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray_f1" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="快递单号:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/tv_logistics_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14"
+                        tools:text="1235464156341" />
+
+                </LinearLayout>
+
+                <!--<View-->
+                <!--style="@style/divider_h"-->
+                <!--android:layout_marginLeft="12dp"-->
+                <!--android:layout_marginRight="12dp"/>-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:overScrollMode="never" />
+
+            </LinearLayout>
+
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@color/gray_f1"/>-->
+
+            <com.jmm.csg.widget.ContainsEmojiEditText
+                android:id="@+id/et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_gray_bg"
+                android:gravity="left"
+                android:hint="备注信息"
+                android:minHeight="80dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/ll_btn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_yes"
+                    style="@style/btn_style"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_btn_gray_bg"
+                    android:text="同意"
+                    android:textColor="@color/gray_96"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/tv_no"
+                    style="@style/btn_style"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/shape_btn_red_bg"
+                    android:text="拒绝"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/tv_resubmit"
+                    style="@style/btn_style"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/shape_btn_gray_bg"
+                    android:text="再次申请"
+                    android:textColor="@color/gray_66"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    style="@style/btn_style"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/shape_btn_red_bg"
+                    android:text="取消退货"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <View style="@style/divider_h"/>
+
+    <LinearLayout
+        android:id="@+id/ll_cstatus"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+</LinearLayout>

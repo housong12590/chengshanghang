@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="手势密码锁定"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="手势密码锁定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"/>
+
+        <CheckBox
+            android:id="@+id/cb_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:button="@drawable/selector_switch_bg"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/empty"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/tv_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_btn_bg"
+        android:gravity="center"
+        android:text="修改手势密码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14"/>
+
+</LinearLayout>

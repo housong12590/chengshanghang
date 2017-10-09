@@ -1,0 +1,52 @@
+<resources>
+    <!--<string name="app_name">城商购</string>-->
+    <string name="app_name">金买卖优购</string>
+
+    <string name="message">消息</string>
+    <string name="commodity">商品</string>
+    <string name="mine">我的</string>
+    <string name="user_center">个人中心</string>
+    <string name="user_info">个人资料</string>
+    <string name="setting">设置</string>
+    <string name="order_manage">销售订单管理</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="forget_password">忘记密码 ?</string>
+    <string name="create_qrcode">生成二维码</string>
+    <string name="photo_num">(%1$d)</string>
+    <string name="publish_select_photo_max">您最多只能选%1$d张图片</string>
+    <string name="image_return_hint">请尽量提供签收包裹图片以及问题商品的各角度拍照图片，最多可以上传5张，而且图片的大小不能超过5M，支持JPG、JPEG、PNG，三种图片格式。</string>
+    <string name="image_express_hint">请上传快递运单拍照及退回包裹拍照图片，最多可以上传2张，而且图片的大小不能超过5M，支持JPG、JPEG、PNG，三种图片格式。</string>
+    <string name="image_max_count">(%1$d/%2$d)完成</string>
+    <string name="user_agreement">《用户协议》</string>
+
+    <string name="flow_exchange_explain">1.积分兑换的流量10分钟内到账，请您耐心等待。\n2.积分兑换的流量套餐开通后立即生效，月底自动失效。\n3.积分兑换属于赠送，不支持打印发票。</string>
+    <string name="cost_exchange_explain">1.积分兑换的话费10分钟内到账，请您耐心等待。\n2.积分兑换的话费，到账后立即生效。\n3.积分兑换属于赠送，不支持打印发票。</string>
+    <string name="refuelling_cards_exchange_explain">1.积分兑换的加油卡充值，10分钟内到账，请您耐心等待。\n2.加油卡完成充值后，需要到充值加油卡当地加油站请工作人员进行激活(圈存)操作，否则充值金额将无法生效。\n3.积分兑换属于赠送，不支持打印发票。</string>
+    <string name="other_exchange_explain">1.积分只能用于充值或者实物兑换。\n2.积分兑换后，将无法退还。</string>
+
+
+    <!--<string name="j">02</string>-->
+    <!--<string name="c">jmm</string>-->
+    <!--<string name="z">144</string>-->
+    <!--<string name="y">88</string>-->
+    <!--<string name="l">165</string>-->
+
+    <string name="czlyj">jmm1441658802</string>
+
+    <array name="orderTitleArray">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>待评价</item>
+        <item>退换货</item>
+    </array>
+
+    <array name="detailTitleArray">
+        <item>商品</item>
+        <item>详情</item>
+        <item>评价</item>
+    </array>
+
+</resources>

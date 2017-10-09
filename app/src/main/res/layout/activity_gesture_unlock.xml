@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/icon_gesture_bg"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <com.jmm.csg.widget.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="请绘制手势密码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_12"/>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="5次失败后,需要重新登录。"
+        android:textColor="@color/gray_96"
+        android:textSize="@dimen/text_10"
+        android:visibility="invisible"/>
+
+
+    <com.jmm.csg.widget.GesturePwdView
+        android:id="@+id/gesturePwdView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gesturePwdView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="忘记密码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_12"/>
+
+</LinearLayout>

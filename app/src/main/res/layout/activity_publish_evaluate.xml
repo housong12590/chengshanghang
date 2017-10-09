@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="发表评价"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="商品评价"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18"/>
+
+            <RadioGroup
+                android:id="@+id/rb_p"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_p_positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check_bg"
+                    android:paddingLeft="5dp"
+                    android:text="好评"/>
+
+                <RadioButton
+                    android:id="@+id/rb_p_negative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:button="@drawable/selector_check_bg"
+                    android:paddingLeft="5dp"
+                    android:text="差评"/>
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <com.jmm.csg.widget.ContainsEmojiEditText
+            android:id="@+id/et_p_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_edit_bg"
+            android:gravity="left"
+            android:hint="宝贝满足你的期待吗? 说说他的优点和美中不足的地方吧"
+            android:minHeight="100dp"
+            android:maxLength="200"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_96"
+            android:textSize="@dimen/text_14"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="客户经理评价"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18"/>
+
+            <RadioGroup
+                android:id="@+id/rb_a"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_a_positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check_bg"
+                    android:paddingLeft="5dp"
+                    android:text="好评"/>
+
+                <RadioButton
+                    android:id="@+id/rb_a_negative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:button="@drawable/selector_check_bg"
+                    android:paddingLeft="5dp"
+                    android:text="差评"/>
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <com.jmm.csg.widget.ContainsEmojiEditText
+            android:id="@+id/et_a_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_edit_bg"
+            android:gravity="left"
+            android:hint="宝贝满足你的期待吗? 说说他的优点和美中不足的地方吧"
+            android:minHeight="100dp"
+            android:maxLength="200"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_96"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_btn_red_bg"
+        android:paddingBottom="6dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="6dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16"/>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="积分兑换"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="当前可用积分"
+            android:textColor="@color/btn_nor"
+            android:textSize="@dimen/text_16"/>
+
+        <ImageView
+            android:id="@+id/iv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_grid_6"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_integral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/btn_nor"
+        android:textSize="@dimen/text_24"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_credits_btn_bg"
+            android:drawableLeft="@drawable/icon_grid_5"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="7dp"
+            android:text="点击查看明细"
+            android:textColor="@color/btn_nor"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:overScrollMode="never"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/layout_bg"
+        android:drawableLeft="@drawable/md_credit_icon"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="温馨提示"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_14"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="1.积分只能用于充值或者实物兑换。\n2.积分兑换后，将无法退还。"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_14"/>
+
+
+</LinearLayout>

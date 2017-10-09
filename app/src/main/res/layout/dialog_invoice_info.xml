@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/shape_layout_nor_bg"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="为什么需要填写纳税人识别号？"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="\t根据国税总局通知，2017年7月1日起，购买人开具企业发票，还需提供公司纳税人识别号 (即 “税号”)或统一社会信用代码，否则将不得作为税收凭证用于办理涉税业务。注意，必须如实填报发票内容，不得变更品名和金额。"
+        android:textColor="@color/gray_66"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="如何获取纳税人识别号？"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="①联系公司财务咨询开票信息；\n②登录全国组织代码管理中心查询："
+        android:textColor="@color/gray_66"/>
+
+    <TextView
+        android:id="@+id/tv_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:textIsSelectable="true"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="\t\thttp://www.nacao.org.cn/"
+        android:textColor="@color/text_set"
+        android:textStyle="italic"/>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_affirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/btn_nor"
+        android:textSize="@dimen/text_16"/>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="关于金买卖优购"/>
+
+    <TextView
+        android:id="@+id/tv_versions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:textColor="@color/gray_96"
+        android:textSize="@dimen/text_14"
+        tools:text="v 1.0.0"/>
+
+    <LinearLayout
+        android:id="@+id/ll_update"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="检测更新"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"/>
+
+        <!--android:id="@+id/tv_versions"-->
+        <TextView
+            android:id="@+id/tv_update_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:gravity="center"
+            android:text="已是最新版"
+            android:textColor="@color/gray_96"
+            android:textSize="@dimen/text_12"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp"
+        android:text="去评分"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_14"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_hotLine"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="客服热线"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"/>
+
+        <!--android:id="@+id/tv_versions"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:text="400 - 040 - 6755"
+            android:textColor="@color/gray_96"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="分享二维码给好友"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"/>
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/defaultpic"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="12dp"
+        android:text="Copyright  2016-2017金买卖（北京）科技有限公司"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_12"/>
+
+
+</LinearLayout>

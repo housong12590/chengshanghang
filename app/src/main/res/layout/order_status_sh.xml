@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="54dp"
+              android:gravity="right|center_vertical"
+              android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_service"
+        style="@style/btn_style"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_btn_gray_bg"
+        android:text="联系客服"
+        android:textColor="@color/gray_96"/>
+
+    <TextView
+        android:id="@+id/tv_apply_refund"
+        style="@style/btn_style"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_btn_gray_bg"
+        android:text="申请退款"
+        android:textColor="@color/gray_96"/>
+
+    <TextView
+        android:id="@+id/tv_logistics"
+        style="@style/btn_style"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_btn_gray_bg"
+        android:text="查看物流"
+        android:textColor="@color/gray_96"/>
+
+    <TextView
+        android:id="@+id/tv_affirm"
+        style="@style/btn_style"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_btn_red_bg"
+        android:text="确定收货"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="退货"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/red"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="退货"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_quality"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableRight="@drawable/selector_check_bg"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="30dp"
+                    android:text="质量问题"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14"/>
+
+                <View style="@style/divider_h"/>
+
+                <RadioButton
+                    android:id="@+id/rb_damaged"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableRight="@drawable/selector_check_bg"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="30dp"
+                    android:text="破损"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14"/>
+
+                <View style="@style/divider_h"/>
+
+                <RadioButton
+                    android:id="@+id/rb_wrongly_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableRight="@drawable/selector_check_bg"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="30dp"
+                    android:text="错发"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14"/>
+
+                <View style="@style/divider_h"/>
+
+                <RadioButton
+                    android:id="@+id/rb_seep_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableRight="@drawable/selector_check_bg"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="30dp"
+                    android:text="漏发"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14"/>
+            </RadioGroup>
+
+            <View style="@style/divider_h"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:text="退货数量"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14"/>
+
+                <ImageView
+                    android:id="@+id/iv_reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:src="@drawable/icon_reduce"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:src="@drawable/icon_add"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/layout_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp">
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/icon_pull_more"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="问题描述"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16"/>
+
+                <com.jmm.csg.widget.ContainsEmojiEditText
+                    android:id="@+id/et_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_edit_bg"
+                    android:gravity="left"
+                    android:hint="请你再次描述详情问题"
+                    android:maxLength="100"
+                    android:minHeight="80dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_96"
+                    android:textSize="@dimen/text_14"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/layout_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传照片"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16"/>
+
+                <com.jmm.csg.widget.CustomLayout
+                    android:id="@+id/customLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/image_return_hint"
+                    android:textColor="@color/gray_96"
+                    android:textSize="@dimen/text_12"/>
+
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:text="《退货须知》"
+                    android:textColor="@color/text_set"
+                    android:textSize="@dimen/text_12"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/layout_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    style="@style/btn_style"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shape_btn_red_bg"
+                    android:text="取消"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_commit"
+                    style="@style/btn_style"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/shape_btn_white_bg"
+                    android:text="提交"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

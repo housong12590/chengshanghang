@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+              android:paddingBottom="8dp"
+              android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人 :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:id="@+id/tv_consignee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="小明"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:id="@+id/tv_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13776601064"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="3dp"
+        android:text="收货地址 : 江苏省南京市雨花台区石华街17号5栋1单元601"
+        android:textColor="@color/gray_66"
+        android:textSize="@dimen/text_14"/>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/cb_def_address"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/icon_check_nor"/>-->
+
+        <RadioButton
+            android:id="@+id/rb_def_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="6"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_address_check_bg"
+            android:drawablePadding="5dp"
+            android:text="设为默认地址"
+            android:textColor="@color/address_check_color"
+            android:textSize="@dimen/text_14"/>
+
+        <com.jmm.csg.widget.CenterTextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_edit"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="编辑"
+            android:textColor="@color/gray_66"
+            android:textSize="@dimen/text_14"/>
+
+        <com.jmm.csg.widget.CenterTextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_delete"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="删除"
+            android:textColor="@color/gray_66"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

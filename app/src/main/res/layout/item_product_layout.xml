@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="8dp"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp"
+              android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/iv_pro_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/prod"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pro_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="宝泉钱币2017年贺岁银币纪念币,3元贺岁福asdfasdfasdfasdfasdfasdfasdf字"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥218.00"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_14"/>
+
+                <TextView
+                    android:id="@+id/tv_pro_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/shape_tag_green_bg"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="1dp"
+                    android:text="现货"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_12"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分 : 0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12"
+                    android:visibility="gone"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_pro_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="销售数量: 50"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12"/>
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="完成进度: "-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/text_12"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_progress"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:text="0/0"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/text_12"/>-->
+
+                    <!--<ProgressBar-->
+                    <!--android:id="@+id/progressBar"-->
+                    <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="5dp"-->
+                    <!--android:layout_weight="3"-->
+                    <!--android:progressDrawable="@drawable/horizontal_progress_bar"/>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_encode"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/qrcode"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="设置"/>
+
+    <TextView
+        android:id="@+id/tv_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableRight="@drawable/icon_more_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:text="个人资料"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_14"/>
+
+    <View style="@style/divider_h"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="手势密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"/>
+
+
+        <TextView
+            android:id="@+id/tv_gesture_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:gravity="center"
+            android:text="已启用"
+            android:textColor="@color/gray_96"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider_h"/>
+
+    <LinearLayout
+        android:id="@+id/ll_cache"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="清除缓存"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:id="@+id/tv_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:textColor="@color/btn_nor"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider_h"/>
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableRight="@drawable/icon_more_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:text="关于"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_14"/>
+
+    <View style="@style/divider_h"/>
+
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_btn_bg"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14"/>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jmm.csg.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_image="@drawable/icon_back"
+        app:title_text="退款"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="退款原因"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16"
+        android:textStyle="bold"/>
+
+    <View style="@style/divider_h"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_check_bg"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:text="拍错"
+            android:textSize="@dimen/text_14"/>
+
+
+        <View style="@style/divider_h"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_check_bg"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:text="未及时发货"
+            android:textSize="@dimen/text_14"/>
+
+
+        <View style="@style/divider_h"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_check_bg"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:text="缺货"
+            android:textSize="@dimen/text_14"/>
+
+
+    </RadioGroup>
+
+    <View style="@style/divider_h"/>
+
+</LinearLayout>
